@@ -4,3 +4,145 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+
+.topHeader {
+    font-size: 50px;
+    height: 100px;
+}
+
+.img {
+    height: 10;
+    width: 10;
+}
+
+.card1, 
+.card2,
+.card3, 
+.card4, 
+.card5, 
+.card6, 
+.card7, 
+.card8 {
+    align-items: center;
+    background-color:#eeeeeec0;
+    color: hsl(0, 0%, 0%);
+    border-radius: 12px;
+    padding: 10px;
+    width: 250px;
+}
+
+.song-info {
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.upper-part {
+    display:flow-root;
+}
+
+.song-image {
+    width: 300px;
+    object-fit: contain;
+}
+
+.song-name {
+    font-size: 20px;
+}
+
+.singer-name {
+    font-size: 15px; 
+    margin: 10px 0 ;
+    justify-content: space-between;
+}
+
+.topHeader {
+    margin: auto;
+    background-color:#dfdfdf;
+    padding: 60px;
+    text-align: left;
+}
+
+.bottom {
+    margin: auto;
+    background-color:#dfdfdf;
+    padding: 60px;
+    text-align: left;
+    height: 10px;
+
+}
+
+.middle-part {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 50px;
+    justify-content: space-evenly;
+}
+
+.row1, 
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.card1, 
+.card2,
+.card3,
+.card4, 
+.card5, 
+.card6, 
+.card7, 
+.card8 {
+    border: 1px solid hsl(0, 0%, 0%);
+}
+
+.card1, 
+.card2, 
+.card3, 
+.card4 {
+    float: left;
+}
+
+.card5, 
+.card6, 
+.card7, 
+.card8 {
+    float: left;
+}
+
+/* MODAL LAYOUT */
+/* CSS for Modal */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   border-radius: 12px;
+}
+.modal-content {
+   background-color: #fefefe;
+   margin: 15% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%; /* Could be more or less, depending on screen size */
+}
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}

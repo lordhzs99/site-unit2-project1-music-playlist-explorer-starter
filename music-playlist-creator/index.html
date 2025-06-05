@@ -6,22 +6,162 @@
     
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
     <link rel="stylesheet" href="style.css">
+    <link rel="styles" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <!-- Your header content here -->
+        <div class="topHeader">
+            <p><strong>Music Playlist Explorer</strong></p>
+        </div>
     </header>
-
     <main> 
         <!-- Your main content here -->
-    </main>
+         <div class="playlist">
+            <div class="row1">
+                <div class="card1" onclick="openModal({name: 'Summer Beats Festival', imageUrl: 'path/to/festival.jpg', dates: 'July 15-17', location: 'Downtown Park', lineup: ['Artist A', 'Artist B']})">
+                    <div class="upper-part">
+                        <div class="song-image"> 
+                                <img src="./assets/uvst.png"/>
+                        </div> 
+                        <div class="song-info"> 
+                                <h3 class="song-name">Otro atardecer</h3>
+                                <p class="singer-name">Bad Bunny</p>
+                        </div>
+                    </div>
+                    <div class="middle-part">
+                        <img id="imguvst" src="./assets/heart_icon.png" width="30" height="30"/>
+                        <p id="likes">0</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="upper-part">
+                        <div class="song-image"> 
+                                <img src="./assets/uvst.png"/>
+                        </div> 
+                        <div class="song-info"> 
+                                <h3 class="song-name">Otro atardecer</h3>
+                                <p class="singer-name">Bad Bunny</p>
+                        </div>
+                    </div>
+                    <div class="middle-part">
+                        <img src="./assets/heart_icon.png" width="30" height="30"/>
+                        <p>0</p>
 
-    <footer>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="upper-part">
+                        <div class="song-image"> 
+                                <img src="./assets/uvst.png"/>
+                        </div> 
+                        <div class="song-info"> 
+                                <h3 class="song-name">Otro atardecer</h3>
+                                <p class="singer-name">Bad Bunny</p>
+                        </div>
+                    </div>
+                    <div class="middle-part">
+                        <img src="./assets/heart_icon.png" width="30" height="30"/>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="card4">
+                    <div class="upper-part">
+                        <div class="song-image"> 
+                                <img src="./assets/uvst.png"/>
+                        </div> 
+                        <div class="song-info"> 
+                                <h3 class="song-name">Otro atardecer</h3>
+                                <p class="singer-name">Bad Bunny</p>
+                        </div>
+                    </div>
+                    <div class="middle-part">
+                        <img src="./assets/heart_icon.png" width="30" height="30"/>
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row2"> 
+                <div class="card5">
+                    <div class="upper-part">
+                        <div class="song-image"> 
+                                <img src="./assets/uvst.png"/>
+                        </div> 
+                        <div class="song-info"> 
+                                <h3 class="song-name">Otro atardecer</h3>
+                                <p class="singer-name">Bad Bunny</p>
+                        </div>
+                    </div>
+                    <div class="middle-part">
+                        <img src="./assets/heart_icon.png" width="30" height="30"/>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="card6">
+                    <div class="upper-part">
+                        <div class="song-image"> 
+                                <img src="./assets/uvst.png"/>
+                        </div> 
+                        <div class="song-info"> 
+                                <h3 class="song-name">Otro atardecer</h3>
+                                <p class="singer-name">Bad Bunny</p>
+                        </div>
+                    </div>
+                    <div class="middle-part">
+                        <img src="./assets/heart_icon.png" width="30" height="30"/>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="card7">
+                    <div class="upper-part">
+                        <div class="song-image"> 
+                                <img src="./assets/uvst.png"/>
+                        </div> 
+                        <div class="song-info"> 
+                                <h3 class="song-name">Otro atardecer</h3>
+                                <p class="singer-name">Bad Bunny</p>
+                        </div>
+                    </div>
+                    <div class="middle-part">
+                        <img src="./assets/heart_icon.png" width="30" height="30"/>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="card8">
+                    <div class="upper-part">
+                        <div class="song-image"> 
+                                <img src="./assets/uvst.png"/>
+                        </div> 
+                        <div class="song-info"> 
+                                <h3 class="song-name">Otro atardecer</h3>
+                                <p class="singer-name">Bad Bunny</p>
+                        </div>
+                    </div>
+                    <div class="middle-part">
+                        <img src="./assets/heart_icon.png" width="30" height="30"/>
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- MODAL OVERLAY -->
+        <div id="song-modal" class="modal">
+            <div class="modal-content">
+               <div class="top-modal">
+                <div class="playlist-cover">
+                    <img src="./assets/uvst.png" />
+                </div>
+                <div class="playlist-text">
+                    <h3 class="playlist-name">Otro atardecer</h3>
+                    <p class="creator-name">Bad Bunny</p>
+                </div>
+               </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bottom">
         <!-- Your footer content here -->
     </footer>
-    <script src="data/data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
