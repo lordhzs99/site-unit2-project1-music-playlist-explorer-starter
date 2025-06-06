@@ -3,11 +3,37 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures it stretches full screen */
+    margin: 0;
 }
+
+.centerMain {
+    flex: 1; 
+}
+
+.topPage, 
+.bottom {
+    flex-shrink: 0; /* Don't shrink header/footer */
+}
+
+
 
 .topHeader {
     font-size: 50px;
     height: 100px;
+    margin: auto;
+    background-color:#dfdfdf;
+    padding: 60px;
+    text-align: left;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    justify-content: space-evenly;
+}
+
+.featuredButton {
+    justify-self: center;
 }
 
 .img {
@@ -15,20 +41,15 @@ body {
     width: 10;
 }
 
-.card1, 
-.card2,
-.card3, 
-.card4, 
-.card5, 
-.card6, 
-.card7, 
-.card8 {
+.card1 {
     align-items: center;
     background-color:#eeeeeec0;
     color: hsl(0, 0%, 0%);
     border-radius: 12px;
     padding: 10px;
     width: 250px;
+    border: 1px solid hsl(0, 0%, 0%);
+    float: left;
 }
 
 .song-info {
@@ -55,12 +76,6 @@ body {
     justify-content: space-between;
 }
 
-.topHeader {
-    margin: auto;
-    background-color:#dfdfdf;
-    padding: 60px;
-    text-align: left;
-}
 
 .bottom {
     margin: auto;
@@ -69,6 +84,13 @@ body {
     text-align: left;
     height: 10px;
 
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    padding: 20px;
+    gap: 50px;
 }
 
 .middle-part {
@@ -80,38 +102,38 @@ body {
     width: 50px;
     justify-content: space-evenly;
 }
-
-.row1, 
-.row2 {
+/*
+.row1 {
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
+}*/
+
+.playlist {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px;
 }
 
-.card1, 
-.card2,
-.card3,
-.card4, 
-.card5, 
-.card6, 
-.card7, 
-.card8 {
-    border: 1px solid hsl(0, 0%, 0%);
+
+button {
+    background-color: #4E4187;
+    font-family: Rubik, sans-serif;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-.card1, 
-.card2, 
-.card3, 
-.card4 {
-    float: left;
+button:hover {
+    background-color: #C1BADE;
+    color: black;
 }
 
-.card5, 
-.card6, 
-.card7, 
-.card8 {
-    float: left;
-}
 
 /* MODAL LAYOUT */
 /* CSS for Modal */
@@ -127,12 +149,57 @@ body {
    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
    border-radius: 12px;
 }
+
 .modal-content {
-   background-color: #fefefe;
+   background-color: lch(98.27% 0.01 296.81);
    margin: 15% auto; /* 15% from the top and centered */
    padding: 20px;
    border: 1px solid #888;
    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.imageModal1 img,
+.imageModal2 img,
+.imageModal3 img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 5px 0 0 5px;
+}
+
+.top-modal {
+    display: flex;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    padding: 40px 40px 0px 60px;
+}
+
+.artistLineup1, 
+.artistLineup2, 
+.artistLineup3 {
+    display: flex;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.leftPartSong1, 
+.leftPartSong2, 
+.leftPartSong3 {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+.songDuration {
+    display: flex;
+    margin-right: 20px;
+}
+
+.bellow {
+    padding: 40px;
 }
 .close {
    color: #aaa;
@@ -145,4 +212,42 @@ body {
    color: black;
    text-decoration: none;
    cursor: pointer;
+}
+
+/* code for the seventh feature */
+.featured-main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.featured-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-left img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.featured-left h2, .featured-left p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.featured-right {
+  flex: 2;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.song-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
 }
