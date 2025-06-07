@@ -2,11 +2,11 @@
 
 ## Unit Assignment: Music Playlist Explorer
 
-Submitted by: **NAME**
+Submitted by: Hector Zambrano Serrano
 
-Estimated time spent: **#** hours spent in total
+Estimated time spent: 40 hours
 
-Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD_LINK_HERE)
+Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://www.loom.com/share/ba8d8a6533324948b43ec5b4b1126835?sid=ca5055d0-151a-44f3-b654-4be05a512460)
 
 ### Application Features
 
@@ -140,15 +140,22 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Yes, the topics were neccesary to understand how to structure code, and also how to use good practices. 
+
+I felt unprepared to complete the stretch assignments not because of the difficulty but because of my organization.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+I would improve my project's visuals, as well as I would have implemented the stretch features. 
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+The logic of the project went well, it was challenging for me to implement the project in this period of time, but with the correct organization and time distribution, the project's implementation will improve. 
+
+My peers used forEach loops, as well as many CSS rendering elements, I will use them in my next project's as well. 
+Also the visual engagment that the projects had were so intelligent. 
+
+Reviewing their projects inspired me to become a better planner regarding my time, as well as being more responsible with the rendering. 
 
 ### Open-source libraries used
 
@@ -156,4 +163,4 @@ Add your response here
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+I love the lecture's environment, as well as the challenges that my mentors give me everytime in order to achive personal goals
