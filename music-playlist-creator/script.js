@@ -1,7 +1,9 @@
-// MODAL FUNCIONALITIES
-
 const modal = document.getElementById("festivalModal");
 const span = document.getElementsByClassName("close")[0];
+var myData = "";
+ var globalVariable={
+       x: 'hello'
+    };
 
 function createCard(playlist) {
   const newCard = document.createElement('div');
@@ -22,26 +24,29 @@ function createCard(playlist) {
     </button>
   `;
 
-  // Agrega el evento solo al contenedor upper-part
   const upperPart = newCard.querySelector('.upper-part');
   upperPart.addEventListener('click', () => openModal(playlist));
   return newCard;
 }
 
 
+
+
 function loadCards() {
   fetch('./data/data.json')
     .then(response => response.json())
     .then(data => {
+     // globalVariable = data;
       const row1 = document.querySelector('.row1');
       data.forEach(playlist => {
+         console.log("play list" + playlist);
+
         const card = createCard(playlist);
         row1.appendChild(card);
       });
     })
     .catch(err => console.error('Error loading JSON:', err));
 }
-
 
 document.addEventListener('DOMContentLoaded', loadCards);
 document.addEventListener('DOMContentLoaded', () => {
@@ -95,7 +100,7 @@ function shuffleSongs() {
         }
     ];
 
-    // Fisher-Yates Shuffle
+    // Shuffle
     for (let i = songs.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [songs[i], songs[j]] = [songs[j], songs[i]];
@@ -132,13 +137,13 @@ function toggleLike(button) {
 function shuffleCard() {
    const shuffleButton = document.querySelector('sButton'); 
    upperPart.addEventListener('click', () => print("pulsed"));
-
 }
 
 
 span.onclick = function() {
    modal.style.display = "none";
 }
+
 window.onclick = function(event) {
    if (event.target == modal) {
       modal.style.display = "none";

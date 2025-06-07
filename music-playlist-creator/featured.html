@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="featured.css">
+    <title>featured page</title>
 </head>
-<body>
+<body class="featuredPageBody">
     <header>
-
+        <div class="featuredHeader">
+            <h1 class="featureHeaderTitle">
+                Shuffle randomly
+            </h1>
+            <a class="FeaturedButton" href="index.html"> 
+                <button>Back</button>
+            </a>
+        </div>
     </header>
     <main>
-        <!-- here is the seventh phase -->
+        <div style="text-align: center; margin: 20px 0;">
+            <button id="shuffleBtn" style="padding: 10px 20px; font-size: 1em; cursor: pointer;">
+                Shuffle Songs
+            </button>
+        </div>
+        <section class="featuredPage" id="featuredPage"></section>
     </main>
-    <footer>
 
+    <footer>
+        <div class="featuredFooter"></div>
     </footer>
-    <script src="script.js"></script>
+    <script src="featuredP.js"></script>
 </body>
 </html>
