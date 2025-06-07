@@ -1,12 +1,10 @@
-📝 `NOTE` Use this template to initialize the contents of a README.md file for your application. As you work on your assignment over the course of the week, update the required or stretch features lists to indicate which features you have completed by changing `[ ]` to `[x]`. (🚫 Remove this paragraph before submitting your assignment.)
-
 ## Unit Assignment: Music Playlist Explorer
 
 Submitted by: Hector Zambrano Serrano
 
 Estimated time spent: 40 hours
 
-Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://www.loom.com/share/ba8d8a6533324948b43ec5b4b1126835?sid=ca5055d0-151a-44f3-b654-4be05a512460)
+Deployed Application (**required**): [Music Playlist Explorer Deployed Site] https://mywebsite-9bxg.onrender.com
 
 ### Application Features
 
@@ -131,10 +129,14 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
   - [ ] Selecting a sort option should result in a reordering based on the selected sort while maintaining a grid view.
 
 ### Walkthrough Video
-
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
-
-`ADD_EMBEDDED_CODE_HERE`
+<div>
+    <a href="https://www.loom.com/share/ba8d8a6533324948b43ec5b4b1126835">
+      <p>Music Playlist Explorer Overview - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/ba8d8a6533324948b43ec5b4b1126835">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ba8d8a6533324948b43ec5b4b1126835-039050c71fa4445d-full-play.gif">
+    </a>
+  </div>
 
 ### Reflection
 
