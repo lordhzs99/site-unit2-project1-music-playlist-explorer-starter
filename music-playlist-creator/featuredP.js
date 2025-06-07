@@ -2,7 +2,8 @@ let cardList = [];
 
 // Create a single card element (for use if needed)
 function createCard(playlist) {
-    console.log(playlist.singerName); 
+    console.log("create card")
+    console.log(playlist); 
   const newCard = document.createElement('div');
   newCard.className = 'card1';
   newCard.innerHTML = `
@@ -37,6 +38,8 @@ function shuffle(array) {
 
 // New function to render album cover and 3 songs list side by side
 function renderAlbumWithSongs(album, songs) {
+    console.log(album);
+    console.log(songs)
   const container = document.getElementById('featuredPage');
   container.innerHTML = ''; // Clear previous content
 
@@ -46,7 +49,8 @@ function renderAlbumWithSongs(album, songs) {
   // Album cover left side
   const coverDiv = document.createElement('div');
   coverDiv.className = 'album-cover';
-  coverDiv.innerHTML = `<img src="${album.songImage}" alt="Album Cover" />`;
+  coverDiv.innerHTML = `<img src="${album.songImage}" alt="Album Cover" />
+  <div> ${album.singerName}</div>`;
 
   // Songs list right side
   const listDiv = document.createElement('div');
