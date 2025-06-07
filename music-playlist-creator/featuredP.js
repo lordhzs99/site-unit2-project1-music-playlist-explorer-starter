@@ -2,6 +2,7 @@ let cardList = [];
 
 // Create a single card element (for use if needed)
 function createCard(playlist) {
+    console.log(playlist.singerName); 
   const newCard = document.createElement('div');
   newCard.className = 'card1';
   newCard.innerHTML = `
@@ -12,6 +13,9 @@ function createCard(playlist) {
       <div class="song-info">
         <h3 class="song-name">${playlist.songName}</h3>
         <p class="singer-name">${playlist.singerName}</p>
+      </div>
+      <div>
+        <h2 class="artist-name">${playlist.singerName}</h2>
       </div>
     </div>
     <button class="middle-part" liked="false" onclick="toggleLike(this)">
